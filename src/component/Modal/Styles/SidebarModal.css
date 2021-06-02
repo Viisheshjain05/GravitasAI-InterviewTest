@@ -1,0 +1,113 @@
+/** Sidebar Modal Css
+ * Prefix - SM [SidebarModal]
+ * 
+ * 
+ * */
+
+/* .SM-modal {
+  overflow: hidden;
+  position: fixed;
+  background: var(--colorWhite);
+  top: 0;
+  z-index: 1050;
+  max-width: 20vw;
+  min-width: 13em;
+  height: 100vh;
+} */
+
+.SM-modal--close {
+  display: none;
+}
+
+.SM-modal--content {
+  color: var(--colorBlack);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--colorWhite);
+}
+
+.SM-modal--header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--BackColor);
+  font-size: 1rem;
+  min-height: 13vh;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.5rem 1rem;
+}
+
+.SM-modal--header__title {
+  font-size: 1.5em;
+  margin: 0;
+  align-self: center;
+  /* line-height: 1.42857143; */
+}
+
+/* .SM-modal--header__utilbtn {
+  font-size: 2em;
+  margin: 0;
+  min-width: 30%;
+  background-color: #5d5d5d;
+} */
+
+.SM-modal--body {
+  overflow: auto;
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  line-height: initial;
+  flex: 1;
+}
+
+.SM-modal--footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  padding: 0.5rem;
+  border-top: 1px solid var(--colorWhite);
+  background-color: var(--subHeadingColor);
+  text-align: right;
+  min-height: 10vh;
+}
+
+.SM-modal-backdrop {
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #0000000f;
+}
+
+/*Todo Test SideBar Center Right */
+.SM-modal {
+  overflow: hidden;
+  position: fixed;
+  background: var(--colorWhite);
+  top: 0;
+  right: 50%;
+  z-index: 1050;
+  max-width: 20vw;
+  min-width: 13em;
+  height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .SM-modal {
+    overflow: hidden;
+    position: fixed;
+    background: var(--colorWhite);
+    top: 0;
+    z-index: 1050;
+    max-width: 25vw;
+    min-width: 16em;
+    height: 100vh;
+    left: 0;
+  }
+}
+
+/*Todo Test SideBar Center Right */
