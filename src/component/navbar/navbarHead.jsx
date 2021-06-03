@@ -42,7 +42,7 @@ const Home = () => {
           <li>
             <Link to="/">
               <div>Conversational</div>
-            </Link> 
+            </Link>
           </li>
           <li>
             <Link to="/">
@@ -67,34 +67,33 @@ const Home = () => {
           <div className="navbar-logo">botanalytics</div>
           <div className="navbar-list">
             <div className="navbar-list--item">
-              <img src="" alt="I" />
+              <i className="bx bx-user"></i>
               Dashboard
             </div>
             <div className="navbar-list--item">
-              <img src="" alt="I" />
+              <i className="bx bx-user"></i>
               Conversational
             </div>
             <div className="navbar-list--item">
-              <img src="" alt="I" />
+              <i className="bx bx-user"></i>
               User
-            </div>  
+            </div>
             <div className="navbar-list--item">
-              <img src="" alt="I" />
+              <i className="bx bx-user"></i>
               Engagement
             </div>
             <div className="navbar-list--item">
-              <img src="" alt="I" />
+              <i className="bx bx-user"></i>
               Integration
             </div>
           </div>
           <div className="navbar-connect">
             <div className="navbar-connect--logo">
-              <img src="" alt="twitter" />
+              <i className="bx bx-user"></i>
             </div>
             <div className="navbar-connect--name">Twitter</div>
           </div>
         </div>
-        hii
       </div>
     </>
   );

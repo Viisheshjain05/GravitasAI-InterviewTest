@@ -13,11 +13,10 @@
   --primaryColor: #7be0b6;
   --secondaryColor: #acdef2;
   --tersiaryColor: #dedede;
-  
+
   /* Gradient Colors */
   --gradientColor-BlueDark: #063c86;
   --gradientColor-BlueLight: #1582b9;
-
 
   /* Page Background Color */
   --BackColor: var(--tersiaryColor);
@@ -25,7 +24,7 @@
 
   /* Section Colors */
   --headingColor: var(--primaryColor);
-  
+
   /*? Black Base */
   --subHeadingColor: var(--themeWhite);
   /*? White Bas */
@@ -51,7 +50,7 @@
 
   /* --themeWhite: #0e1015;
   --themeBlack: #dcdcdc; */
-  
+
   /* --colorWhite: #000000;
   --colorBlack: #ffffff; */
 

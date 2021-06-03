@@ -1,0 +1,114 @@
+.filter {
+  display: flex;
+  background-color: var(--colorWhite);
+  width: 85%;
+  justify-content: space-between;
+  margin: 1em auto;
+  padding: 3em 0em;
+  font-size: 1em;
+  border-radius: 0.4em;
+
+  &--heading {
+    color: var(--headingColor);
+    margin-top: -0.5em;
+    margin-right: auto;
+    margin-left: 1em;
+    font-size: 1.4em;
+  }
+
+  &--date {
+    display: flex;
+
+    &-range__start {
+      padding: 0.5em 1em;
+      border: 1px solid var(--themeBlack);
+      border-radius: 1.2em;
+      margin: 0 1em;
+      position: relative;
+      cursor: pointer;
+
+      & > i {
+        padding-right: 0.5em;
+      }
+      &::before {
+        content: "Date Range";
+
+        font-size: 0.8em;
+        position: absolute;
+        top: 20%;
+        left: -55%;
+      }
+    }
+
+    &-range__end {
+      padding: 0.5em 1em;
+      border: 1px solid var(--themeBlack);
+      border-radius: 1.2em;
+      margin: 0 1em;
+      position: relative;
+      cursor: pointer;
+
+      & > i {
+        padding-right: 0.5em;
+      }
+
+      &::before {
+        content: "to";
+        font-size: 0.8em;
+        position: absolute;
+        top: 20%;
+        left: -15%;
+      }
+    }
+  }
+  &--custom-range {
+    padding: 0.5em 1em;
+    border: 1px solid var(--themeBlack);
+    border-radius: 1.2em;
+    cursor: pointer;
+
+    & > i {
+      padding-left: 0.5em;
+    }
+  }
+  &--export {
+    padding: 0.5em 1em;
+    border: 1px solid var(--themeBlack);
+    border-radius: 1.2em;
+    margin: 0 1em;
+    cursor: pointer;
+
+    & > i {
+      padding-left: 0.5em;
+    }
+  }
+}
+
+.box-graph {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2em;
+
+  width: 85%;
+  background: var(--backColor);
+  margin: 1em auto;
+  padding: 2em 0em;
+  border-radius: 0.5em;
+
+  &__sub-box {
+    background-color: var(--colorWhite);
+    min-height: 10em;
+    min-width: 10em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+
+    &--text {
+    }
+    &--map {
+    }
+    &--unit {
+    }
+  }
+}

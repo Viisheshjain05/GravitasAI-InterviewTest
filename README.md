@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+<!--
+! Best Practice for component Props Naming
+* onNavbar   - functional based like use when there is function comming on behind no string or array only function
+* withNavbar - hoc only to use with high order components
+* isNavbar   - true || false - to make statement is on or off
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+! Best Practice for File Naming
+* All Folders in - camelCase
+* All Files in - PascalCase except index.js
+ -->
 
-## Available Scripts
+# Diffrence Between Camel, Pascal, Snake, Kebab, Capitalize, Lowercase, UpperCase
 
-In the project directory, you can run:
+## features -
 
-### `yarn start`
+        0. space between Words
+        1. Remove space between Words
+        2. Replace Space With underscore (_)
+        3. Replace Space With dash (-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+        4. Capitalizing all first letter in all words except starting one
+        5. Capitalizing all first letter in all words 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+        6. Capitalizing all Words
+        7. Lowercase all Words
 
-### `yarn test`
+        8. Capitalizing only first letter of first word in sentence in all words 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ex - RAW -> this is raw words
 
-### `yarn build`
+1. Camel Case - thisIsCamelCase [1, 4]
+2. Pascal Case - ThisIsPascalCase [1, 5]
+3. Snake Case - this_is_snake_case [2, 7]
+4. Snake Case (All Caps) - THIS_IS_SNAKE_CASE_CAPS_ON [2, 6]
+5. Kebab Case - this-is-kebab-case [3, 7]
+6. Capitalize Case - This is capitalize case [0, 8]
+7. Upper Case - This Is Capitalize Case [0, 5]
+8. Lower Case - this is capitalize case [0, 7]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# BEM -Block\_\_Element--Modifier-value

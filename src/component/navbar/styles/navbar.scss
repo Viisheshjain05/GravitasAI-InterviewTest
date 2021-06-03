@@ -17,7 +17,12 @@
     font-weight: 500;
   }
 
-  &-logo {
+  &-connect{
+    display: flex;
+    flex-direction: column;
+    &--logo {
+      align-self: center;
+    }
   }
 
   &-list {

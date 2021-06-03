@@ -12,7 +12,7 @@ import Navbar from "../navbar/navbarHead.jsx";
 // import { SimpleWBButton } from "../UI/Button/Button.jsx";
 
 //* Icons
-// import Logo from "../../container/Home/Logo";
+// import xLogo from "../../container/Home/Logo";
 // import Ximage from "../../assets/img/cross.svg";
 // import ImgO1 from "../../assets/img/1.png";
 // import ImgO2 from "../../assets/img/2.png";
@@ -27,8 +27,8 @@ const Page = (props) => {
     // FullBackImgHandler = false,
 
     // Animate Page Props
-    AnimatePage = true,
-    // Heading,
+    IsPageAnimate = true,
+    IsNavbar = true,
     // wrp: lftWrp,
 
     // back,
@@ -43,16 +43,16 @@ const Page = (props) => {
   return (
     <motion.div
       className="page"
-      initial={AnimatePage && { opacity: 0.5, scale: 0.85 }}
-      animate={AnimatePage && { opacity: 1, scale: 1 }}
-      transition={AnimatePage && { duration: 0.7 }}
+      initial={IsPageAnimate && { opacity: 0.5, scale: 0.85 }}
+      animate={IsPageAnimate && { opacity: 1, scale: 1 }}
+      transition={IsPageAnimate && { duration: 0.7 }}
       style={
-        AnimatePage && {
+        IsPageAnimate && {
           transition: "all 0.5s cubic-bezier(0, 0, 0.13, 0.75) 0s",
         }
       }
     >
-      <Navbar> </Navbar>
+      {IsNavbar && <Navbar />}
       {children}
     </motion.div>
   );
