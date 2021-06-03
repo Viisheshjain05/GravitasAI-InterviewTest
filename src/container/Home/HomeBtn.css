@@ -66,7 +66,12 @@
   padding: 1em;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) {
+  #Mobile-only-navbar {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
   .menu {
     position: absolute;
     top: 0;
@@ -83,7 +88,13 @@
     transition: 0.3s;
   }
   .menu ul {
+    text-align: center;
     width: 50%;
+  }
+  .menu ul li {
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: 400;
   }
 
   .menu .sidebar-item {
@@ -171,7 +182,7 @@ button.menuIcon.humbargerAni span {
   background: none;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   button.menuIcon {
     display: block;
   }

@@ -1,0 +1,50 @@
+/* *****************************
+ ?       Navbar Head START     
+ * ****************************** */
+
+.navbar {
+  &-head {
+    display: flex;
+    background-image: linear-gradient(
+      106deg,
+      var(--gradientColor-BlueDark),
+      var(--gradientColor-BlueLight)
+    );
+    color: var(--subHeadingColor);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2.5em;
+    font-weight: 500;
+  }
+
+  &-logo {
+  }
+
+  &-list {
+    display: flex;
+
+    &--item {
+      padding: 0 1em;
+      text-transform: capitalize;
+      &::after {
+        content: ">";
+        position: absolute;
+        background-color: transparent;
+        transform: rotate(90deg);
+        padding: 0.2em 0.3em 0em;
+        font-size: 0.8em;
+        cursor: pointer;
+      }
+
+      & > img {
+        padding: 0 0.2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-head {
+    display: none;
+  }
+}

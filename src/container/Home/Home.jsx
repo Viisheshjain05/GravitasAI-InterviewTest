@@ -1,5 +1,6 @@
 //* Libraries
 import React from "react";
+import { Link } from "react-router-dom";
 // import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 
@@ -9,18 +10,97 @@ import React from "react";
 // import { NewsletterModal } from "../../component/Modals/NewsletterModal/NewsletterModal.jsx";
 // import FormModal from "../../component/Modals/FormModal/FormModal.jsx";
 
-import "./Home.css";
+import "./Home.scss";
 import "./HomeBtn.css";
 
-
 const Home = () => {
-  // const auth = useAuth();
+  const MobileHamburgerToggle = () => {
+    const menuIcon = document.querySelector(".menuIcon");
+    const menu = document.querySelector(".menu");
 
-  return <div>hii</div>;
+    menuIcon.classList.toggle("humbargerAni");
+    menu.classList.toggle("menuShow");
+  };
+
+  return (
+    <>
+      <button
+        type="button"
+        className="menuIcon"
+        onClick={() => MobileHamburgerToggle()}
+      >
+        <span style={{ fontSize: "2em" }}> X</span>
+      </button>
+
+      <div className="menu" id="Mobile-only-navbar">
+        <ul>
+          <li>
+            <Link to="/">
+              <div>Dashboard</div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <div>Conversational</div>
+            </Link> 
+          </li>
+          <li>
+            <Link to="/">
+              <div>User</div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <div>Engagement</div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <div>Integration</div>
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div className="navbar-head" id="Desktop-only-navbar">
+          <div className="navbar-logo">botanalytics</div>
+          <div className="navbar-list">
+            <div className="navbar-list--item">
+              <img src="" alt="I" />
+              Dashboard
+            </div>
+            <div className="navbar-list--item">
+              <img src="" alt="I" />
+              Conversational
+            </div>
+            <div className="navbar-list--item">
+              <img src="" alt="I" />
+              User
+            </div>  
+            <div className="navbar-list--item">
+              <img src="" alt="I" />
+              Engagement
+            </div>
+            <div className="navbar-list--item">
+              <img src="" alt="I" />
+              Integration
+            </div>
+          </div>
+          <div className="navbar-connect">
+            <div className="navbar-connect--logo">
+              <img src="" alt="twitter" />
+            </div>
+            <div className="navbar-connect--name">Twitter</div>
+          </div>
+        </div>
+        hii
+      </div>
+    </>
+  );
 };
 
 export default Home;
-
 
 // const MobileHamburgerToggle = () => {
 //   const menuIcon = document.querySelector(".menuIcon");
