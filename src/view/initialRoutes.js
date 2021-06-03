@@ -6,15 +6,16 @@
 
 //* Libraries
 import React from "react";
-// import { AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import { TitleName } from "./TitleName";
+
+import { AnimatePresence } from "framer-motion";
 
 //* Container - Home
-import Home from "../container/Home/Home.jsx";
+import Home from "../container/home/home.jsx";
 
 const InitialRoutes = () => {
   return (
+    <AnimatePresence>
     <BrowserRouter>
       {/* <TitleName /> */}
 
@@ -27,6 +28,7 @@ const InitialRoutes = () => {
         <Route component={Home} />
       </Switch>
     </BrowserRouter>
+      </AnimatePresence>
   );
 };
 
