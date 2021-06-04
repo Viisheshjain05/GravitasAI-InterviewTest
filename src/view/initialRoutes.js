@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 //* Container - Home
-import Home from "../container/home/home.jsx";
+import Home from "../container/Home/Home.jsx";
 import Graphpage from "../container/graphPage/graphpage.jsx";
 import Modal from "../component/FormModal/FormModal.jsx";
 
