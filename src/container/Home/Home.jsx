@@ -18,21 +18,21 @@ const Home = (props) => {
           </div>
           <div className="filter--date">
             <div className="filter--date-range__start">
-              <i className="bx bx-user"></i>
+              <i class="bx bx-calendar-star"></i>
               2021-04-28
             </div>
             <div className="filter--date-range__end">
-              <i className="bx bx-user"></i>
+              <i class="bx bx-calendar-star"></i>
               2021-05-28
             </div>
           </div>
           <div className="filter--custom-range">
             Custom Range
-            <i className="bx bx-user"></i>
+            <i class="bx bx-chevron-down"></i>
           </div>
           <div className="filter--export">
             Export To Pdf
-            <i className="bx bx-user"></i>
+            <i class="bx bx-chevron-down"></i>
           </div>
         </div>
         {/* Filter Section END */}
@@ -200,7 +200,7 @@ const Home = (props) => {
         <div className="analysis">
           <div style={{ marginRight: "1em" }} className="analysis__head">
             <h3>
-              <i className="bx bx-user"></i>
+              <i class="bx bx-heart"></i>
               Most common intents
             </h3>
             <div className="analysis__head-sub">
@@ -230,7 +230,7 @@ const Home = (props) => {
           </div>
           <div style={{ marginLeft: "1em" }} className="analysis__head">
             <h3>
-              <i className="bx bx-user"></i>
+              <i class="bx bx-time"></i>
               Most active hours
             </h3>
             <div className="analysis__head-sub">

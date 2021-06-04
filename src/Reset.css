@@ -66,6 +66,10 @@
   --contentFont: "Lato", sans-serif; /* Vj */
 }
 
+i {
+  padding-right: 0.4em;
+}
+
 body {
   font-family: var(--contentFont);
   color: var(--contentColor);

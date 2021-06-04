@@ -17,7 +17,7 @@
     font-weight: 500;
   }
 
-  &-connect{
+  &-connect {
     display: flex;
     flex-direction: column;
     &--logo {
@@ -31,14 +31,9 @@
     &--item {
       padding: 0 1em;
       text-transform: capitalize;
-      &::after {
-        content: ">";
-        position: absolute;
-        background-color: transparent;
-        transform: rotate(90deg);
+      & i {
         padding: 0.2em 0.3em 0em;
-        font-size: 0.8em;
-        cursor: pointer;
+        font-size: 1em;
       }
 
       & > img {
