@@ -29,7 +29,7 @@ const Home = () => {
         className="menuIcon"
         onClick={() => MobileHamburgerToggle()}
       >
-        <span style={{ fontSize: "2em" }}> X</span>
+        <span style={{ fontSize: "2em" }}></span>
       </button>
 
       <div className="menu" id="Mobile-only-navbar">

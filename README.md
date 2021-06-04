@@ -1,8 +1,9 @@
 <!--
 ! Best Practice for component Props Naming
-* onNavbar   - functional based like use when there is function comming on behind no string or array only function
-* withNavbar - hoc only to use with high order components
-* isNavbar   - true || false - to make statement is on or off
+* OnNavbar   - conditional based when there is perticular condition attach to work on thing
+* WithNavbar - hoc only to use with high order components
+* IsNavbar   - true || false - to make statement is on or off
+* GetNavbar   - return function to get any value of state
 
 ! Best Practice for File Naming
 * All Folders in - camelCase

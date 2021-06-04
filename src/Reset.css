@@ -112,7 +112,7 @@ h4,
 h5,
 h6 {
   font-family: var(--subHeadingFont);
-  color: var(--subHeadingColor);
+  color: var(--headingColor);
   font-weight: 500;
   margin-top: 0px;
 }

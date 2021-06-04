@@ -73,11 +73,12 @@
 }
 @media (max-width: 1200px) {
   .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    bottom: 0;
     transform: translateY(0);
     background: var(--BackColor);
     display: flex;
@@ -86,6 +87,8 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 100;
+    overflow: hidden;
   }
   .menu ul {
     text-align: center;
@@ -127,15 +130,15 @@ button.menuIcon {
   border: none;
   background: none;
   outline: none;
-  top: 75px;
-  right: 60px;
+  top: 55px;
+  right: 20px;
   padding-bottom: 20px;
   display: none;
 }
 button.menuIcon span {
   width: 100%;
   height: 4px;
-  background: var(--SecBtn_BackgroundColor);
+  background: var(--colorBlack);
   display: block;
   position: relative;
   transition: 0.3s;
@@ -145,7 +148,7 @@ button.menuIcon span:after {
   position: absolute;
   width: 60%;
   height: 100%;
-  background: var(--SecBtn_BackgroundColor);
+  background: var(--colorBlack);
   bottom: -20px;
   right: 0;
   transition: 0.3s;
@@ -155,7 +158,7 @@ button.menuIcon span:before {
   position: absolute;
   width: 85%;
   height: 100%;
-  background: var(--SecBtn_BackgroundColor);
+  background: var(--colorBlack);
   bottom: -10px;
   right: 0;
   transition: 0.3s;
@@ -165,7 +168,7 @@ button.menuIcon:hover span:after {
   width: 100%;
 }
 button.menuIcon.humbargerAni {
-  z-index: 4;
+  z-index: 114;
 }
 button.menuIcon.humbargerAni span:before {
   transform: rotate(45deg);
@@ -187,12 +190,17 @@ button.menuIcon.humbargerAni span {
     display: block;
   }
 }
+@media (max-width: 1200px) {
+  button.menuIcon {
+    right: 120px;
+  }
+}
 @media (max-width: 767px) {
   button.menuIcon {
     display: block;
     width: 40px;
     top: 4em;
-    right: 15px;
+    right: 85px;
   }
 }
 

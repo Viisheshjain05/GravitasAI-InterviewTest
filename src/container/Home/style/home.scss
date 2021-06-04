@@ -84,6 +84,26 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter > * {
+    margin: 0.5em;
+  }
+}
+@media (max-width: 992px) {
+  .filter--date {
+    flex-direction: column;
+  }
+  .filter--date-range__start {
+    margin: 1em;
+  }
+  .filter--date-range__end {
+    margin: 1em;
+  }
+}
 .box-graph {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -103,12 +123,87 @@
     display: flex;
     flex-direction: column;
     border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.2s ease-in;
 
+    &:hover {
+      border: 2px solid var(--colorBlack85);
+    }
     &--text {
+      flex: 1 1;
+      border-bottom: 2px solid transparent;
+      align-self: flex-start;
+      font-size: 1em;
+      color: var(--colorBlack85);
+    }
+
+    &--unit {
+      flex: 1 1;
+      align-self: center;
+      font-size: 2em;
+      margin-right: 4em;
+      font-weight: 300;
     }
     &--map {
+      clip-path: polygon(13% 69%, 44% 74%, 75% 52%, 100% 100%, 0 100%);
+      background-color: var(--secondaryColor);
+      flex: 2;
+      transition: transform 0.4s ease-in;
+      position: relative;
+
+      &:hover {
+        background-color: var(--headingColor);
+      }
     }
-    &--unit {
+  }
+}
+@media (max-width: 1200px) {
+  .box-graph {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.analysis {
+  width: 85%;
+  margin: 0 auto;
+  background: var(--BackColor);
+  padding: 1em;
+  display: flex;
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    background-color: var(--colorWhite);
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    & > h3 {
+      margin: 0.5em 0.5em 1em;
+      line-height: 1.5em;
     }
+
+    &-sub {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em;
+      color: var(--colorBlack85);
+      transition: transform 0.2s ease-in;
+      cursor: pointer;
+      font-size: 0.9em;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .analysis {
+    flex-direction: column;
+  }
+  .analysis > * {
+    margin: 1em 0 !important;
   }
 }
