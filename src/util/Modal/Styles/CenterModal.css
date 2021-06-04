@@ -130,7 +130,7 @@
     border-radius: 10px;
     width: 3em;
     height: 3em;
-    background: center/cover url("../../../assets/img/x.png");
+    background: center/cover url("../../../assets/cross.svg");
     margin-right: 1em;
     margin-top: 0px;
   }

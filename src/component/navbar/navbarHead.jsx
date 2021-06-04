@@ -1,14 +1,6 @@
 //* Libraries
 import React from "react";
 import { Link } from "react-router-dom";
-// import { motion } from "framer-motion";
-// import { Link } from "react-router-dom";
-
-//* Components
-// import { useAuth } from "../../_firebase/Authentication/AuthContext";
-// import { SimpleBWButton } from "../../component/UI/Button/Button.jsx";
-// import { NewsletterModal } from "../../component/Modals/NewsletterModal/NewsletterModal.jsx";
-// import FormModal from "../../component/Modals/FormModal/FormModal.jsx";
 
 import "./styles/navbar.scss";
 import "./styles/HomeBtn.css";

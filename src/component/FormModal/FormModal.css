@@ -1,0 +1,17 @@
+/* ! Testing Styles */
+.navlink-button {
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.3s;
+  padding: 10px;
+  padding-top: 7px;
+  border-radius: 3px;
+  background: transparent;
+  border: none;
+}
+/* ! Testing Styles */
+
+/* .form-modal--form > form{
+background-color: ;
+  } */
+
