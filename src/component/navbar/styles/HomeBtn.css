@@ -130,7 +130,7 @@ button.menuIcon {
   border: none;
   background: none;
   outline: none;
-  top: 55px;
+  top: 5em;
   right: 20px;
   padding-bottom: 20px;
   display: none;
@@ -204,6 +204,14 @@ button.menuIcon.humbargerAni span {
   }
 }
 
+@media (max-width: 400px) {
+  button.menuIcon {
+    top: 2em;
+    right: 3em;
+  }
+}
+
+
 /* *****************************
- ?    MOBILE HAMBRUGER BUTTON END      
- * ****************************** */
+?    MOBILE HAMBRUGER BUTTON END      
+* ****************************** */

@@ -12,23 +12,26 @@ import { AnimatePresence } from "framer-motion";
 
 //* Container - Home
 import Home from "../container/home/home.jsx";
+import Graphpage from "../container/graphPage/graphpage.jsx";
 
 const InitialRoutes = () => {
   return (
     <AnimatePresence>
-    <BrowserRouter>
-      {/* <TitleName /> */}
+      <BrowserRouter>
+        {/* <TitleName /> */}
 
-      <Switch>
-        {/* The Main pages */}
-        <Route path="/" component={Home} />
-        <Route path="/home" component={Home} />
+        <Switch>
+          {/* The Main pages */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
 
-        {/* 404 Reroute Not Found Page */}
-        <Route component={Home} />
-      </Switch>
-    </BrowserRouter>
-      </AnimatePresence>
+          <Route exact path="/graph-page" component={Graphpage} />
+
+          {/* 404 Reroute Not Found Page */}
+          <Route component={Home} />
+        </Switch>
+      </BrowserRouter>
+    </AnimatePresence>
   );
 };
 

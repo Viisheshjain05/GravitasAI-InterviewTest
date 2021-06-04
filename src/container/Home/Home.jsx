@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import BlockCharts from "../../component/charts/blockCharts.jsx";
 import Layout from "../../component/layout/layout.jsx";
 import "./style/home.scss";
-
+// import  from
 // import img from "../../assets/Dashboard-1-TopHalf.png";
 
 const Home = (props) => {
@@ -36,138 +37,162 @@ const Home = (props) => {
         </div>
         {/* Filter Section END */}
         <div className="box-graph">
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">5.2K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">5.2K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div
+                style={{
+                  clipPath:
+                    " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
+                }}
+                className="box-graph__sub-box--map"
+              ></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div
-              style={{
-                clipPath:
-                  " polygon(54% 49%, 90% 43%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 28% 65%)",
-              }}
-              className="box-graph__sub-box--map"
-            ></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
-          <div className="box-graph__sub-box">
-            <div className="box-graph__sub-box--text">
-              {" "}
-              Live Conversion Count{" "}
+          </Link>
+          <Link to="/graph-page">
+            <div className="box-graph__sub-box">
+              <div className="box-graph__sub-box--text">
+                {" "}
+                Live Conversion Count{" "}
+              </div>
+              <div className="box-graph__sub-box--unit">3.6K</div>
+              <div className="box-graph__sub-box--map"></div>
             </div>
-            <div className="box-graph__sub-box--unit">3.6K</div>
-            <div className="box-graph__sub-box--map"></div>
-          </div>
+          </Link>
         </div>
 
         {/* Last Section In Home page Analysis */}

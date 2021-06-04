@@ -64,7 +64,9 @@ const Home = () => {
 
       <div>
         <div className="navbar-head" id="Desktop-only-navbar">
-          <div className="navbar-logo">botanalytics</div>
+          <Link to="/">
+            <div className="navbar-logo">botanalytics</div>
+          </Link>
           <div className="navbar-list">
             <div className="navbar-list--item">
               <i className="bx bx-user"></i>
