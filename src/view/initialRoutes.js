@@ -18,7 +18,7 @@ import Modal from "../component/FormModal/FormModal.jsx";
 const InitialRoutes = () => {
   return (
     <>
-      <Modal />
+      {/* <Modal /> */}
       <AnimatePresence>
         <BrowserRouter>
           {/* <TitleName /> */}
