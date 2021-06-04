@@ -13,7 +13,7 @@ import { AnimatePresence } from "framer-motion";
 //* Container - Home
 import Home from "../container/Home/Home.jsx";
 import Graphpage from "../container/graphPage/graphpage.jsx";
-import Modal from "../component/FormModal/FormModal.jsx";
+// import Modal from "../component/FormModal/FormModal.jsx";
 
 const InitialRoutes = () => {
   return (
